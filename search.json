@@ -86,30 +86,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Aprende estadística inferencial con Python",
+    "title": "Estadística Inferencial con Python",
     "section": "",
-    "text": "Una aplicación para acompañar tus clases de estadística inferencial: carga datos, realiza un análisis y descubre el código Python que lo hace posible. Puedes empezar desde la interfaz, sin escribir código.\nDescargar software para Windows Empieza aquí\nDescargar las guías (.zip)"
+    "text": "El objetivo de este proyecto es proporcionar una herramienta de apoyo para las clases de estadística inferencial. Se utiliza una interfaz gráfica para realizar los análisis, pero también se muestra el código Python que se ejecuta en segundo plano.\nDescargar software para Windows Empieza aquí\nDescargar las guías (.zip)"
   },
   {
-    "objectID": "index.html#de-la-interfaz-al-código",
-    "href": "index.html#de-la-interfaz-al-código",
-    "title": "Aprende estadística inferencial con Python",
-    "section": "De la interfaz al código",
-    "text": "De la interfaz al código\nElige las variables y el procedimiento. La aplicación muestra el resultado y el código Python utilizado para que puedas leerlo, copiarlo y estudiarlo en clase. Si quieres ejecutarlo en tu propio entorno, conserva también la carga y preparación de los datos."
-  },
-  {
-    "objectID": "index.html#tres-formas-de-empezar",
-    "href": "index.html#tres-formas-de-empezar",
-    "title": "Aprende estadística inferencial con Python",
-    "section": "Tres formas de empezar",
-    "text": "Tres formas de empezar\n\n\n01 · Paramétrico\nPingüinos · ANOVA\n¿La longitud media de las aletas cambia entre especies? Compara medias y localiza la función Python que realiza la prueba.\nProbar este recorrido\nDescargar PDF\n\n\n02 · No paramétrico\nDientes · Kruskal–Wallis\nCompara tres grupos de dosis con una prueba basada en rangos. Observa qué cambia respecto al ANOVA.\nProbar este recorrido\nDescargar PDF\n\n\n03 · Proporciones\nUn evento · Prueba binomial\nCuenta un evento, contrasta una proporción e interpreta su intervalo de confianza.\nProbar este recorrido\nDescargar PDF"
-  },
-  {
-    "objectID": "index.html#úsalo-en-tu-próxima-clase",
-    "href": "index.html#úsalo-en-tu-próxima-clase",
-    "title": "Aprende estadística inferencial con Python",
-    "section": "Úsalo en tu próxima clase",
-    "text": "Úsalo en tu próxima clase\nPredice → ejecuta → interpreta → mira el código. Escribe qué esperas encontrar, realiza la prueba y compara tu predicción con la salida. Después cambia una opción y revisa qué cambia en Python.\nCada guía incluye los pasos esenciales, un ejemplo visual y un recordatorio de los supuestos del método.\nLeer la guía de inicio Descargar la guía de inicio"
+    "objectID": "index.html#tres-ejemplos-para-empezar",
+    "href": "index.html#tres-ejemplos-para-empezar",
+    "title": "Estadística Inferencial con Python",
+    "section": "Tres ejemplos para empezar",
+    "text": "Tres ejemplos para empezar\n\n\n01 · Paramétrico\nPingüinos · ANOVA\n¿La longitud media de las aletas cambia entre especies? Compara medias y localiza la función Python que realiza la prueba.\nProbar este recorrido\nDescargar PDF\n\n\n02 · No paramétrico\nDientes · Kruskal–Wallis\nCompara tres grupos de dosis con una prueba basada en rangos. Observa qué cambia respecto al ANOVA.\nProbar este recorrido\nDescargar PDF\n\n\n03 · Proporciones\nUn evento · Prueba binomial\nCuenta un evento, contrasta una proporción e interpreta su intervalo de confianza.\nProbar este recorrido\nDescargar PDF\n\n\nLeer la guía de inicio Descargar la guía de inicio"
   },
   {
     "objectID": "01_Pinguinos.html",
