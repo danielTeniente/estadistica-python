@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "Guia_inicial.html",
+    "href": "Guia_inicial.html",
+    "title": "Empieza aquí",
+    "section": "",
+    "text": "Descargar esto en PDF"
+  },
+  {
+    "objectID": "Guia_inicial.html#propósito-del-proyecto",
+    "href": "Guia_inicial.html#propósito-del-proyecto",
+    "title": "Empieza aquí",
+    "section": "Propósito del proyecto",
+    "text": "Propósito del proyecto\nEsta aplicación está pensada para acompañar las clases de estadística inferencial para cursos universitarios en carreras como ciencias de datos. El proyecto nació porque hay cursos de estadística inferencial que se apoyan en R, pero los estudiantes de carreras técnicas suelen aprender Python como lenguaje de programación. Utilizar R resulta sencillo a través de Rcommander, así que este proyecto usa esta herramienta como inspiración.\nLa idea es que el practicante pueda utilizar las herramientas de estadística inferencial a través de una interfaz gráflica: apuntar y hacer clic, pero que también sea transparente acerca del código Python que se ejecuta en segundo plano.\nEl usuario puede cargar un archivo csv, realizar un procedimiento estadístico y copiar el código en Python que se despliega en pantalla para crear su propio pipeline de análisis en su entorno local o en un notebook."
+  },
+  {
+    "objectID": "Guia_inicial.html#descarga-y-ejecución",
+    "href": "Guia_inicial.html#descarga-y-ejecución",
+    "title": "Empieza aquí",
+    "section": "1. Descarga y ejecución",
+    "text": "1. Descarga y ejecución\nAbre la página de descargas del proyecto y busca el archivo python-stats.zip.\n\nDescarga y extrae el ZIP en una carpeta.\nMantén juntos el ejecutable y la carpeta _internal para que el programa funcione. La carpeta ‘data’ contiene 3 datasets de ejemplo para probar el software.\nEl archivo python-stats.exe abre la aplicación en el navegador.\n\n\n\n\n\n\n\nFigura 1: Archivos del paquete: el ejecutable, sus dependencias y los datos de ejemplo.\n\n\n\nEl ejecutable incluye lo necesario para abrir la aplicación sin instalar Python por separado. Al iniciarlo se abre una consola y la interfaz aparece en el navegador. Para detener la aplicación se puede cerrar la consola o presionar Ctrl+C en ella.\n\n\n\n\n\n\nTipDeja abierta la consola\n\n\n\nLa consola mantiene el programa en marcha. Si el navegador no se abre, entra en la dirección local que muestra la CLI, normalmente http://localhost:8501. Cuando termines, puedes cerrar la consola."
+  },
+  {
+    "objectID": "Guia_inicial.html#cargar-datos",
+    "href": "Guia_inicial.html#cargar-datos",
+    "title": "Empieza aquí",
+    "section": "2. Cargar datos",
+    "text": "2. Cargar datos\nEn Upload Dataset puedes seleccionar un archivo CSV de tu computadora. Revisa que la vista previa muestre las columnas separadas correctamente. Si todo aparece en una sola columna, ajusta el separador.\n\n\n\n\n\n\nFigura 2: Carga de datos y código Python que utiliza la aplicación para leer el archivo."
+  },
+  {
+    "objectID": "Guia_inicial.html#escenarios-disponibles-en-la-carpeta-data",
+    "href": "Guia_inicial.html#escenarios-disponibles-en-la-carpeta-data",
+    "title": "Empieza aquí",
+    "section": "3. Escenarios disponibles en la carpeta ‘data’",
+    "text": "3. Escenarios disponibles en la carpeta ‘data’\n\n01 · Pingüinos: compara medias entre especies con ANOVA. Es el recorrido paramétrico.\n02 · Dientes: compara grupos de dosis con Kruskal–Wallis. Es el recorrido no paramétrico.\n03 · Proporciones: cuenta un evento y contrasta una proporción con la prueba binomial."
+  },
+  {
+    "objectID": "Guia_inicial.html#utilizar-el-código-python",
+    "href": "Guia_inicial.html#utilizar-el-código-python",
+    "title": "Empieza aquí",
+    "section": "4. Utilizar el código Python",
+    "text": "4. Utilizar el código Python\nRevisa el bloque Python que aparece junto a cada resultado. Cópialo a tu cuaderno (en Google Colab) y construye tu propio pipeline.\nPara ejecutarlo en tu entorno local, instala las bibliotecas necesarias. Es recomendable crear un venv utilizando python -m venv venv y activarlo con venv\\Scripts\\activate (Windows) o source venv/bin/activate (Linux/Mac)."
+  },
+  {
+    "objectID": "Guia_inicial.html#es-sólo-un-apoyo-para-el-aprendizaje",
+    "href": "Guia_inicial.html#es-sólo-un-apoyo-para-el-aprendizaje",
+    "title": "Empieza aquí",
+    "section": "5. Es sólo un apoyo para el aprendizaje",
+    "text": "5. Es sólo un apoyo para el aprendizaje\nLa aplicación facilita el cálculo; elegir el método adecuado e interpretar el resultado forman parte del aprendizaje."
+  },
+  {
+    "objectID": "02_Dientes.html",
+    "href": "02_Dientes.html",
+    "title": "02 · Dientes",
+    "section": "",
+    "text": "Descargar esto en PDF"
+  },
+  {
+    "objectID": "02_Dientes.html#presentación-del-escenario",
+    "href": "02_Dientes.html#presentación-del-escenario",
+    "title": "02 · Dientes",
+    "section": "Presentación del escenario",
+    "text": "Presentación del escenario\n¿Cambia la longitud de los odontoblastos entre tres dosis de vitamina C? Usaremos ToothGrowth, con datos de 60 cobayas, para conocer una prueba basada en rangos y ver su código Python.\nEste ejemplo se centra en la dosis. El dataset también incluye dos formas de administración de vitamina C; aquí las ignoramos para simplificar el recorrido."
+  },
+  {
+    "objectID": "02_Dientes.html#preparar-los-datos",
+    "href": "02_Dientes.html#preparar-los-datos",
+    "title": "02 · Dientes",
+    "section": "1. Preparar los datos",
+    "text": "1. Preparar los datos\n\nCarga el CSV de ToothGrowth desde Upload Dataset.\nEn Data Transformation → Change Data Types, selecciona dose y conviértela en Categorical (category). Esta variable es categóroca ordinal, el orden debe ser 0.5, 1.0, 2.0.\nEn Descriptive Statistics → Numerical Variables, elige len. Genera un gráfico de cajas agrupado por dose.\n\n\n\n\n\n\n\nFigura 1: Configuración de dose como variable categórica ordenada.\n\n\n\n\n\n\n\n\n\nFigura 2: Frecuencias de las tres categorías de dosis.\n\n\n\nComprueba también las frecuencias de dose en Categorical Variables: hay 20 animales por dosis.\n\n\n\n\n\n\nFigura 3: Configuración del gráfico de cajas por dosis.\n\n\n\n\n\n\n\n\n\nFigura 4: Longitud de odontoblastos en los tres grupos de dosis.\n\n\n\nLas medianas parecen aumentar con la dosis. Ahora vamos a contrastar si hay diferencias entre los grupos utilizando un procedimiento no paramétrico: Kruskal–Wallis.\n\n\n\n\n\n\nNotaAntes del test\n\n\n\nKruskal–Wallis compara rangos en grupos independientes y no exige normalidad. Cuando las formas y dispersiones son similares, se interpreta como una comparación de medianas. No hace falta probar Shapiro–Wilk o Levene para usarlo. Lo elegimos para practicar un método no paramétrico, no hemos descartado ANOVA necesariamente."
+  },
+  {
+    "objectID": "02_Dientes.html#ejecutar-kruskalwallis",
+    "href": "02_Dientes.html#ejecutar-kruskalwallis",
+    "title": "02 · Dientes",
+    "section": "2. Ejecutar Kruskal–Wallis",
+    "text": "2. Ejecutar Kruskal–Wallis\nEn k-Sample Tests → k-Sample Median Tests, selecciona:\n\nVariable numérica: len.\nAgrupación: dose.\nCategorías: 0.5, 1.0 y 2.0.\n\nLa hipótesis nula es que los grupos tienen la misma distribución. Pulsa Run Kruskal-Wallis Test para ver los resultados y el código Python que genera la aplicación.\n\n\n\n\n\n\nFigura 5: Configuración de Kruskal–Wallis con len y las tres dosis.\n\n\n\n\n\n\n\n\n\nFigura 6: Resultado de Kruskal–Wallis y código que reproduce la prueba.\n\n\n\nEn el ejemplo, \\(\\mathbf{H \\approx 40,67}\\) y p &lt; 0,001. Hay suficiente evidencia para descartar la hipótesis nula de que las medianas son iguales. El resultado global no dice por sí solo qué pares difieren.\nAunque el menú se llame Median Tests, recuerda que la interpretación del test depende de la forma de las distribuciones.\n\n\n\n\n\n\nTipMira el Python que acabas de generar\n\n\n\nLocaliza stats.kruskal debajo del resultado. Compara ese bloque con el ANOVA del episodio anterior: se preparan grupos de observaciones, pero cambia la función estadística."
+  },
+  {
+    "objectID": "02_Dientes.html#intervalos-de-confianza-por-pares-con-bootstrap",
+    "href": "02_Dientes.html#intervalos-de-confianza-por-pares-con-bootstrap",
+    "title": "02 · Dientes",
+    "section": "3. Intervalos de confianza por pares con bootstrap",
+    "text": "3. Intervalos de confianza por pares con bootstrap\nKruskal–Wallis no ofrece comparaciones por pares ni intervalos de confianza, el software incluye un procedimiento mediante bootstrap: se remuestrean los datos y se calculan las diferencias de medianas entre pares de grupos. En Bootstrap Pairwise Confidence Intervals, conserva len, dose y las tres dosis. Selecciona 95 % de confianza y 2000 remuestreos, y genera los intervalos para las diferencias de medianas.\n\n\n\n\n\n\nFigura 7: Configuración de 2000 remuestreos y tabla de intervalos bootstrap.\n\n\n\n\n\n\n\n\n\nFigura 8: Intervalos bootstrap para las diferencias de medianas entre dosis.\n\n\n\nPara 0.5 − 1.0, la diferencia observada es −9,4, con un intervalo aproximado de −13,35 a −5,90. El primer grupo tiene una mediana menor; el intervalo no incluye cero. Los otros dos intervalos también son negativos.\n\n\n\n\n\n\nNotaQué puedes concluir\n\n\n\nEstos intervalos estudian diferencias de medianas, Kruskal–Wallis no trabaja con medianas directamente. Úsalos como exploración adicional.\n\n\nPara el aprendizaje Recuerda que aquí ignoramos las dos formas de administración: este recorrido no estudia sus diferencias ni su interacción con la dosis. Investiga cómo esta variable afecta la longitud de los odontoblastos.\nMás sobre Kruskal–Wallis en SciPy."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Aprende estadística inferencial con Python",
+    "section": "",
+    "text": "Una aplicación para acompañar tus clases de estadística inferencial: carga datos, realiza un análisis y descubre el código Python que lo hace posible. Puedes empezar desde la interfaz, sin escribir código.\nDescargar software para Windows Empieza aquí\nDescargar las guías (.zip)"
+  },
+  {
+    "objectID": "index.html#de-la-interfaz-al-código",
+    "href": "index.html#de-la-interfaz-al-código",
+    "title": "Aprende estadística inferencial con Python",
+    "section": "De la interfaz al código",
+    "text": "De la interfaz al código\nElige las variables y el procedimiento. La aplicación muestra el resultado y el código Python utilizado para que puedas leerlo, copiarlo y estudiarlo en clase. Si quieres ejecutarlo en tu propio entorno, conserva también la carga y preparación de los datos."
+  },
+  {
+    "objectID": "index.html#tres-formas-de-empezar",
+    "href": "index.html#tres-formas-de-empezar",
+    "title": "Aprende estadística inferencial con Python",
+    "section": "Tres formas de empezar",
+    "text": "Tres formas de empezar\n\n\n01 · Paramétrico\nPingüinos · ANOVA\n¿La longitud media de las aletas cambia entre especies? Compara medias y localiza la función Python que realiza la prueba.\nProbar este recorrido\nDescargar PDF\n\n\n02 · No paramétrico\nDientes · Kruskal–Wallis\nCompara tres grupos de dosis con una prueba basada en rangos. Observa qué cambia respecto al ANOVA.\nProbar este recorrido\nDescargar PDF\n\n\n03 · Proporciones\nUn evento · Prueba binomial\nCuenta un evento, contrasta una proporción e interpreta su intervalo de confianza.\nProbar este recorrido\nDescargar PDF"
+  },
+  {
+    "objectID": "index.html#úsalo-en-tu-próxima-clase",
+    "href": "index.html#úsalo-en-tu-próxima-clase",
+    "title": "Aprende estadística inferencial con Python",
+    "section": "Úsalo en tu próxima clase",
+    "text": "Úsalo en tu próxima clase\nPredice → ejecuta → interpreta → mira el código. Escribe qué esperas encontrar, realiza la prueba y compara tu predicción con la salida. Después cambia una opción y revisa qué cambia en Python.\nCada guía incluye los pasos esenciales, un ejemplo visual y un recordatorio de los supuestos del método.\nLeer la guía de inicio Descargar la guía de inicio"
+  },
+  {
+    "objectID": "01_Pinguinos.html",
+    "href": "01_Pinguinos.html",
+    "title": "01 · Pingüinos",
+    "section": "",
+    "text": "Descargar esto en PDF"
+  },
+  {
+    "objectID": "01_Pinguinos.html#presentación-del-escenario",
+    "href": "01_Pinguinos.html#presentación-del-escenario",
+    "title": "01 · Pingüinos",
+    "section": "Presentación del escenario",
+    "text": "Presentación del escenario\n¿La longitud media de las aletas es igual en las tres especies de pingüinos? Usaremos ANOVA para comparar sus medias y veremos el código Python que genera el software.\nNecesitas la aplicación abierta y el CSV de pingüinos de la carpeta data."
+  },
+  {
+    "objectID": "01_Pinguinos.html#carga-de-datos",
+    "href": "01_Pinguinos.html#carga-de-datos",
+    "title": "01 · Pingüinos",
+    "section": "1. Carga de datos",
+    "text": "1. Carga de datos\n\nEn Upload Dataset, carga el archivo de pingüinos: penguins.csv.\nVerifica que la vista previa muestre las columnas separadas correctamente.\nEn el menú Descriptive Statistics selecciona Numerical Variables y selecciona flipper_length_mm (longitud de aleta, en milímetros) como variable.\nEn la parte baja, activa Group Boxplot by Category, elige species y pulsa Generate Visualizations. Esto genera un gráfico de cajas que muestra la distribución de la longitud de aleta por especie.\n\n\n\n\n\n\n\nFigura 1: Configuración del gráfico de cajas por especie.\n\n\n\n\n\n\n\n\n\nFigura 2: Longitud de aleta por especie.\n\n\n\nGentoo presenta aletas más largas en este gráfico. Queremos saber si hay evidencia suficiente para descartar la hipótesis de igualdad de medias. La herramienta para realizar este análisis es el test de una vía (ANOVA).\n\n\n\n\n\n\nNotaAntes del test\n\n\n\nEl ANOVA clásico se usa con observaciones independientes, distribuciones aproximadamente normales dentro de los grupos y varianzas similares. Fijaremos un nivel de significación de 0,05 y revisaremos normalidad y varianzas antes de comparar medias."
+  },
+  {
+    "objectID": "01_Pinguinos.html#revisar-la-normalidad-por-especie",
+    "href": "01_Pinguinos.html#revisar-la-normalidad-por-especie",
+    "title": "01 · Pingüinos",
+    "section": "2. Revisar la normalidad por especie",
+    "text": "2. Revisar la normalidad por especie\nEs importante revisar normalidad y varianzas antes de comparar medias porque sin estas condiciones el ANOVA clásico puede no ser fiable.\nAbre Normality Tests → Normality Tests by Group:\n\nSelecciona flipper_length_mm como variable numérica.\nElige species para agrupar e incluye las tres especies.\nSelecciona Shapiro–Wilk y pulsa Run Shapiro-Wilk Test.\n\n\n\n\n\n\n\nFigura 3: Configuración de Shapiro–Wilk por especie.\n\n\n\n\n\n\n\n\n\nFigura 4: Normalidad por especie: valores p y casos válidos.\n\n\n\nLa hipótesis nula de esta prueba es que la distribución del grupo es normal. Con \\(\\mathbf{p &lt; 0,05}\\) encontramos evidencia contra la normalidad; con \\(\\mathbf{p ≥ 0,05}\\) no la rechazamos, pero tampoco la demostramos.\nEn la captura, los valores p son 0,7200 para Adelie, 0,8106 para Chinstrap y 0,0016 para Gentoo. Gentoo requiere atención: revisa su forma, valores extremos y un gráfico Q–Q.\n\n\n\n\n\n\nNota¿Por qué seguimos? El teorema del límite central\n\n\n\nCon observaciones independientes de una misma distribución y varianza finita, el teorema del límite central (TLC) indica que la distribución de la media muestral se aproxima a una normal al aumentar el tamaño de muestra. Los datos individuales no tienen que volverse normales.\nAquí tenemos 151, 68 y 123 casos válidos por especie: todos superan la referencia habitual de 30 por grupo. Esto apoya continuar con una comparación de medias pese al resultado para Gentoo. El 30 es una regla orientativa, no un umbral del teorema; con asimetría marcada o valores extremos pueden hacer falta más observaciones.\n\n\nLa decisión en este ejemplo: continuamos con ANOVA apoyándonos en los tamaños de la muestra por especie.\nMás sobre el TLC.\nMira el código: identifica la selección de grupos y la llamada a shapiro."
+  },
+  {
+    "objectID": "01_Pinguinos.html#comparación-de-varianzas-por-especie",
+    "href": "01_Pinguinos.html#comparación-de-varianzas-por-especie",
+    "title": "01 · Pingüinos",
+    "section": "3. Comparación de varianzas por especie",
+    "text": "3. Comparación de varianzas por especie\n\nAbre k-Sample Tests → k-Sample Variance Tests.\nSelecciona otra vez flipper_length_mm como variable numérica, species para agrupar y elige las tres especies.\nElige Levene’s Test for Equal Variances y ejecuta la prueba.\n\n\n\n\n\n\n\nFigura 5: Configuración de la comparación de varianzas por especie.\n\n\n\n\n\n\n\n\n\nFigura 6: Prueba de Levene y código generado para comparar varianzas.\n\n\n\nLa hipótesis nula es que las varianzas de los grupos son iguales. En este ejemplo, p = 0,7188: no encontramos evidencia suficiente para rechazarla al nivel 0,05. Eso no demuestra que las varianzas sean idénticas, pero nos permite continuar con el ANOVA.\nMira el código: localiza stats.levene. En la captura se utiliza center='median', una variante menos sensible a desviaciones de normalidad."
+  },
+  {
+    "objectID": "01_Pinguinos.html#comparar-las-medias",
+    "href": "01_Pinguinos.html#comparar-las-medias",
+    "title": "01 · Pingüinos",
+    "section": "4. Comparar las medias",
+    "text": "4. Comparar las medias\nAbre k-Sample Tests → k-Sample Mean Tests y selecciona:\n\nVariable numérica: flipper_length_mm.\nAgrupación: species; incluye las tres especies.\nConfianza: 0.95 (95% para los intervalos de confianza).\nAssume equal variances: activado para este ejemplo (el test anterior no rechazó la hipótesis de igualdad de varianzas).\n\nEjecuta el ANOVA. La hipótesis nula es que las tres medias son iguales.\n\n\n\n\n\n\nFigura 7: Configuración del ANOVA para las tres especies.\n\n\n\n\n\n\n\n\n\nFigura 8: Resultado del ANOVA y código Python generado por la aplicación.\n\n\n\nEn el ejemplo, \\(\\mathbf{F \\approx 594,80}\\) y la pantalla muestra p = 0.0000. Léelo como p &lt; 0,001, no como cero exacto. Hay evidencia suficiente para descatar que las medias de los grupos son iguales, existe por lo menos una media que se diferencia significativamente.\n\n\n\n\n\n\nTipMira el código Python\n\n\n\nLocaliza stats.f_oneway: realiza el ANOVA clásico."
+  },
+  {
+    "objectID": "01_Pinguinos.html#intervalos-de-confianza-y-comparaciones-por-pares",
+    "href": "01_Pinguinos.html#intervalos-de-confianza-y-comparaciones-por-pares",
+    "title": "01 · Pingüinos",
+    "section": "5. Intervalos de confianza y comparaciones por pares",
+    "text": "5. Intervalos de confianza y comparaciones por pares\nTukey HSD es la opción para obtener intervalos de confianza cuando se asume igualdad de varianzas. Con una confianza de 0.95, mira los intervalos de las diferencias de medias: si un intervalo no incluye cero, ese par presenta una diferencia significativa.\n\n\n\n\n\n\nFigura 9: Resultado de Tukey HSD y tabla de comparaciones por pares.\n\n\n\n\n\n\n\n\n\nFigura 10: Diferencias de medias e intervalos de Tukey.\n\n\n\nEn la figura ningún intervalo cruza cero. Una diferencia negativa «Adelie − Gentoo» indica una media menor en Adelie.\nPara el aprendizaje: Explica la secuencia gráfico de cajas → normalidad → varianzas → ANOVA → Tukey y una limitación del análisis.\nMás sobre ANOVA en SciPy."
+  },
+  {
+    "objectID": "03_Proporciones.html",
+    "href": "03_Proporciones.html",
+    "title": "03 · Proporciones",
+    "section": "",
+    "text": "Descargar esto en PDF"
+  },
+  {
+    "objectID": "03_Proporciones.html#presentación-del-escenario",
+    "href": "03_Proporciones.html#presentación-del-escenario",
+    "title": "03 · Proporciones",
+    "section": "Presentación del escenario",
+    "text": "Presentación del escenario\n¿La proporción de personas con la enfermedad es compatible con el 50 %? Usaremos el archivo heart para realizar una prueba binomial y obtener un intervalo de confianza.\nEn este archivo, target = 1 significa que la persona tiene la enfermedad y target = 0 que no la tiene. El 50 % es una referencia para practicar."
+  },
+  {
+    "objectID": "03_Proporciones.html#cargar-los-datos",
+    "href": "03_Proporciones.html#cargar-los-datos",
+    "title": "03 · Proporciones",
+    "section": "1. Cargar los datos",
+    "text": "1. Cargar los datos\n\nCarga el CSV de heart en Upload Dataset.\nEn Data Transformation → Change Data Types, convierte target en variable categórica.\nEn Descriptive Statistics → Categorical Variables, selecciona target y genera su tabla de frecuencias.\n\n\n\n\n\n\n\nFigura 1: Configuración de target como variable categórica.\n\n\n\n\n\n\n\n\n\nFigura 2: Recuento de personas sin la enfermedad (0) y con la enfermedad (1).\n\n\n\nEn este ejemplo, 165 de 303 personas tienen la enfermedad: aproximadamente 54,46 %. La pregunta es si esa diferencia respecto al 50 % es estadísticamente significativa.\n\n\n\n\n\n\nNotaAntes del test\n\n\n\nLa prueba binomial trabaja con un evento binario y observaciones independientes, bajo un modelo de probabilidad común. No exige normalidad ni igualdad de varianzas, y su versión exacta puede utilizarse sin grandes muestras."
+  },
+  {
+    "objectID": "03_Proporciones.html#ejecutar-la-prueba",
+    "href": "03_Proporciones.html#ejecutar-la-prueba",
+    "title": "03 · Proporciones",
+    "section": "2. Ejecutar la prueba",
+    "text": "2. Ejecutar la prueba\nEn Proportion Tests → One-Proportion Test, configura:\n\nVariable: target; Value for Success: 1 (tener la enfermedad).\nProporción de referencia: 0.5 (50%).\nAlternativa: two-sided, para buscar diferencias en ambos sentidos.\nPrueba: Binomial Test (Exact).\nIntervalo: Wilson Score; confianza: 0.95.\n\nLa hipótesis nula es que la proporción de personas con la enfermedad es igual a 50%. Pulsa Run Analysis. Aquí «success» solo nombra el evento contado; no significa un resultado favorable.\n\n\n\n\n\n\nFigura 3: Configuración de la prueba binomial y el intervalo de Wilson.\n\n\n\n\n\n\n\n\n\nFigura 4: Proporción observada, valor p, intervalo y código Python.\n\n\n\nEn el ejemplo, el valor p es 0,1351. Como supera 0,05, no hay evidencia suficiente para descartar que la proporción de personas con la enfermedad sea igual al 50 %. Esto no demuestra que sea exactamente el 50 %.\nEl intervalo de Wilson va aproximadamente del 48,83 % al 59,97 % e incluye el 50 %. La prueba binomial y el intervalo de Wilson son dos procedimientos distintos que aquí ofrecen lecturas compatibles.\n\n\n\n\n\n\nTipMira el código Python que acabas de generar\n\n\n\nLocaliza binomtest bajo el resultado. Identifica el número de casos del evento, el total, la referencia p=0.5 y la alternativa two-sided. Observa que ese p=0.5 es un dato de entrada; no es el valor p que devuelve la prueba."
+  },
+  {
+    "objectID": "03_Proporciones.html#comparar-la-proporción-entre-dos-grupos",
+    "href": "03_Proporciones.html#comparar-la-proporción-entre-dos-grupos",
+    "title": "03 · Proporciones",
+    "section": "3. Comparar la proporción entre dos grupos",
+    "text": "3. Comparar la proporción entre dos grupos\nAhora la pregunta es: ¿es igual la proporción de personas con la enfermedad entre mujeres y hombres? En este archivo, sex = 0 corresponde a mujeres y sex = 1 a hombres. Convierte sex en variable categórica y revisa la tabla de contingencia sex × target.\n\n\n\n\n\n\n\n\n\n\nGrupo sex\nSin enfermedad (0)\nCon enfermedad (1)\nTotal\n% con enfermedad\n\n\n\n\n0 (mujeres)\n24\n72\n96\n75,00 %\n\n\n1 (hombres)\n114\n93\n207\n44,93 %\n\n\n\n\n\n\n\n\n\nFigura 5: Tabla de contingencia de sex y target en la aplicación.\n\n\n\nEn Proportion Tests → Two-Proportions Test, selecciona sex como agrupación, target como outcome y 1 como success. Elige two-sided, Fisher’s Exact Test y un intervalo Newcombe con confianza 0.95. Ejecuta el análisis.\n\n\n\n\n\n\nFigura 6: Configuración de Fisher y el intervalo de Newcombe para dos proporciones.\n\n\n\nLa hipótesis nula es que las dos proporciones son iguales. Fisher es una opción exacta para la tabla 2 × 2 y no exige recuentos esperados grandes. Si eliges una chi-cuadrado, revisa antes los recuentos esperados y las condiciones de ese método.\n\n\n\n\n\n\nFigura 7: Comparación entre dos grupos e intervalo para la diferencia de proporciones.\n\n\n\nEl resultado muestra p &lt; 0,001. La diferencia mujeres − hombres (0 − 1) es 30,07 puntos porcentuales, con un intervalo aproximado de 18,38 a 40,14 puntos. El intervalo no incluye cero: en este archivo la proporción de personas con la enfermedad es mayor entre las mujeres. Esto no establece una relación causal.\nLa captura también presenta el odds ratio. Es otra medida, no la confundas con la diferencia de proporciones. Para la diferencia, la referencia de igualdad es 0; para el odds ratio, es 1.\nEn el código Python, localiza fisher_exact, comprueba el orden de la tabla y encuentra el cálculo del intervalo.\nPara el aprendizaje Cambia solo el nivel de confianza y observa qué pasa con la amplitud del intervalo y qué parte del código cambia.\nMás sobre la prueba binomial en SciPy."
+  }
+]
