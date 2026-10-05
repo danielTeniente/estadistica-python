@@ -1,12 +1,15 @@
 ---
-title: "Aprende estadística inferencial con Python"
-subtitle: "Prueba el análisis. Entiende el resultado. Mira el código."
+title: "Estadística Inferencial con Python"
+subtitle: "Proyecto de ciencias de datos realizado para el Máster en Ciencias de Datos en el Politécnico de Leiria"
 format: html
 toc: false
 ---
 
 ::: {.hero}
-Una aplicación para acompañar tus clases de estadística inferencial: **carga datos, realiza un análisis y descubre el código Python que lo hace posible**. Puedes empezar desde la interfaz, sin escribir código.
+El objetivo de este proyecto es proporcionar una herramienta
+de apoyo para las clases de estadística inferencial.
+Se utiliza una interfaz gráfica para realizar los análisis,
+pero también se muestra el código Python que se ejecuta en segundo plano.
 
 [Descargar software para Windows](https://github.com/danielTeniente/python-statistical-inference/releases){.btn .btn-primary}
 [Empieza aquí](Guia_inicial.qmd){.btn .btn-outline-primary}
@@ -14,11 +17,7 @@ Una aplicación para acompañar tus clases de estadística inferencial: **carga 
 [Descargar las guías (.zip)](descargas/Guias_estadistica.zip){download="Guias_estadistica.zip"}
 :::
 
-## De la interfaz al código
-
-Elige las variables y el procedimiento. La aplicación muestra el resultado y el código Python utilizado para que puedas leerlo, copiarlo y estudiarlo en clase. Si quieres ejecutarlo en tu propio entorno, conserva también la carga y preparación de los datos.
-
-## Tres formas de empezar
+## Tres ejemplos para empezar
 
 ::: {.guide-grid}
 ::: {.guide-card}
@@ -54,12 +53,6 @@ Cuenta un evento, contrasta una proporción e interpreta su intervalo de confian
 [Descargar PDF](descargas/03_Proporciones.pdf){download="03_Proporciones.pdf"}
 :::
 :::
-
-## Úsalo en tu próxima clase
-
-**Predice → ejecuta → interpreta → mira el código.** Escribe qué esperas encontrar, realiza la prueba y compara tu predicción con la salida. Después cambia una opción y revisa qué cambia en Python.
-
-Cada guía incluye los pasos esenciales, un ejemplo visual y un recordatorio de los supuestos del método.
 
 [Leer la guía de inicio](Guia_inicial.qmd){.btn .btn-outline-primary}
 [Descargar la guía de inicio](descargas/Guia_inicial.pdf){.btn .btn-outline-primary download="Guia_inicial.pdf"}
