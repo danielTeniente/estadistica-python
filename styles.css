@@ -1,0 +1,16 @@
+:root { --guide-ink: #183d4a; --guide-accent: #176c69; }
+body { color: #263b43; background: #fcfbf8; }
+h1, h2, h3, .navbar-brand { color: var(--guide-ink); }
+h1 { font-weight: 750; letter-spacing: -.035em; }
+.navbar { border-bottom: 1px solid #dce5e2; }
+.hero { background: #eaf3ef; border-radius: 16px; padding: 2rem; margin: 1.5rem 0 2rem; font-size: 1.15rem; }
+.guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
+.guide-card { background: white; border: 1px solid #dce5e2; border-radius: 12px; padding: 1.4rem; }
+.guide-card h3 { margin-top: 0; font-size: 1.3rem; }
+.btn { border-radius: 7px; white-space: normal; }
+.btn-primary { background: var(--guide-accent); border-color: var(--guide-accent); }
+.btn-outline-primary { color: var(--guide-accent); border-color: var(--guide-accent); }
+.btn-outline-primary:hover { background: var(--guide-accent); border-color: var(--guide-accent); color: white; }
+a:focus-visible { outline: 3px solid #b35b1c; outline-offset: 4px; }
+.download-bar { margin: 1rem 0 2rem; }
+@media (max-width: 800px) { .guide-grid { grid-template-columns: 1fr; } .hero { padding: 1.3rem; } }

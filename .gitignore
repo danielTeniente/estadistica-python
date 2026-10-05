@@ -1,0 +1,13 @@
+/_site/
+/_pdf/
+/.quarto/
+/tmp/
+__pycache__/
+*.log
+*.aux
+*.synctex.gz
+.DS_Store
+
+**/*.quarto_ipynb
+
+

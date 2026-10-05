@@ -1,0 +1,65 @@
+---
+title: "Aprende estadística inferencial con Python"
+subtitle: "Prueba el análisis. Entiende el resultado. Mira el código."
+format: html
+toc: false
+---
+
+::: {.hero}
+Una aplicación para acompañar tus clases de estadística inferencial: **carga datos, realiza un análisis y descubre el código Python que lo hace posible**. Puedes empezar desde la interfaz, sin escribir código.
+
+[Descargar software para Windows](https://github.com/danielTeniente/python-statistical-inference/releases){.btn .btn-primary}
+[Empieza aquí](Guia_inicial.qmd){.btn .btn-outline-primary}
+
+[Descargar las guías (.zip)](descargas/Guias_estadistica.zip){download="Guias_estadistica.zip"}
+:::
+
+## De la interfaz al código
+
+Elige las variables y el procedimiento. La aplicación muestra el resultado y el código Python utilizado para que puedas leerlo, copiarlo y estudiarlo en clase. Si quieres ejecutarlo en tu propio entorno, conserva también la carga y preparación de los datos.
+
+## Tres formas de empezar
+
+::: {.guide-grid}
+::: {.guide-card}
+### 01 · Paramétrico
+**Pingüinos · ANOVA**
+
+¿La longitud media de las aletas cambia entre especies? Compara medias y localiza la función Python que realiza la prueba.
+
+[Probar este recorrido](01_Pinguinos.qmd){.btn .btn-outline-primary}
+
+[Descargar PDF](descargas/01_Pinguinos.pdf){download="01_Pinguinos.pdf"}
+:::
+
+::: {.guide-card}
+### 02 · No paramétrico
+**Dientes · Kruskal–Wallis**
+
+Compara tres grupos de dosis con una prueba basada en rangos. Observa qué cambia respecto al ANOVA.
+
+[Probar este recorrido](02_Dientes.qmd){.btn .btn-outline-primary}
+
+[Descargar PDF](descargas/02_Dientes.pdf){download="02_Dientes.pdf"}
+:::
+
+::: {.guide-card}
+### 03 · Proporciones
+**Un evento · Prueba binomial**
+
+Cuenta un evento, contrasta una proporción e interpreta su intervalo de confianza.
+
+[Probar este recorrido](03_Proporciones.qmd){.btn .btn-outline-primary}
+
+[Descargar PDF](descargas/03_Proporciones.pdf){download="03_Proporciones.pdf"}
+:::
+:::
+
+## Úsalo en tu próxima clase
+
+**Predice → ejecuta → interpreta → mira el código.** Escribe qué esperas encontrar, realiza la prueba y compara tu predicción con la salida. Después cambia una opción y revisa qué cambia en Python.
+
+Cada guía incluye los pasos esenciales, un ejemplo visual y un recordatorio de los supuestos del método.
+
+[Leer la guía de inicio](Guia_inicial.qmd){.btn .btn-outline-primary}
+[Descargar la guía de inicio](descargas/Guia_inicial.pdf){.btn .btn-outline-primary download="Guia_inicial.pdf"}

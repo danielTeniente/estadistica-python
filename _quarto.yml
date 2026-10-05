@@ -1,0 +1,72 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - 01_Pinguinos.qmd
+    - 02_Dientes.qmd
+    - 03_Proporciones.qmd
+    - Guia_inicial.qmd
+
+lang: es
+editor: visual
+website:
+  title: "Estadística inferencial"
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Inicio
+      - text: Episodios
+        menu:
+          - href: 01_Pinguinos.qmd
+            text: "01 · Pingüinos"
+          - href: 02_Dientes.qmd
+            text: "02 · Dientes"
+          - href: 03_Proporciones.qmd
+            text: "03 · Proporciones"
+      - href: Guia_inicial.qmd
+        text: Empieza aquí
+    right:
+      - href: https://github.com/danielTeniente/python-statistical-inference/releases
+        text: Descargar software
+        icon: box-arrow-up-right
+      - href: descargas/Guias_estadistica.zip
+        text: Descargar las guías
+        icon: download
+  page-footer: "Estadística inferencial · Guías en español"
+format:
+  html:
+    format-links: false
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-title: En esta guía
+    link-external-newwindow: true
+  pdf:
+    documentclass: scrartcl
+    papersize: a4
+    fontsize: 11pt
+    geometry: margin=25mm
+    colorlinks: true
+    toc: false
+    number-sections: false
+    pdf-engine: xelatex
+    fig-pos: H
+    toc-depth: 2
+    linkcolor: teal
+    urlcolor: teal
+    include-in-header:
+      text: |
+        \makeatletter
+        \renewcommand{\@maketitle}{%
+          \begin{center}
+            {\LARGE\sffamily\bfseries\color{teal}\@title\par}
+            \vspace{0.5em}
+            {\normalsize\sffamily\@subtitle\par}
+          \end{center}
+          \vspace{0.5em}
+        }
+        \makeatother
+execute:
+  enabled: false
